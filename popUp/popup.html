@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            body {
+                background-color:#d0e4fe;
+                width: 21rem;
+            }
+            h1{
+                font-size: 96px;
+                font-weight: 500;
+                text-align: center;
+                color: #f35626;
+                -webkit-animation:swing 2s infinite;
+            }
+            @-webkit-keyframes swing{
+                20%{
+                    -webkit-transform:rotate(15deg);
+                }40%{
+                     -webkit-transform:rotate(-15deg);
+                 }60%{
+                      -webkit-transform:rotate(5deg);
+                  }80%{
+                       -webkit-transform:rotate(-5deg);
+                   }100%{
+                        -webkit-transform:rotate(0deg);
+                    }
+            }
+            .padd-15{
+                padding-top: 15px;
+            }
+            .button{
+                width: 140px;
+                line-height: 38px;
+                text-align: center;
+                font-weight: bold;
+                color: #fff;
+                text-shadow:1px 1px 1px #333;
+                border-radius: 5px;
+                margin:0 20px 20px 0;
+                position: relative;
+                overflow: hidden;
+            }
+            .button.yellow{
+                border:1px solid #d2a000;
+                box-shadow: 0 1px 2px #fedd71 inset,0 -1px 0 #a38b39 inset,0 -2px 3px #fedd71 inset;
+                background: -webkit-linear-gradient(top,#fece34,#d8a605);
+                background: -moz-linear-gradient(top,#fece34,#d8a605);
+                background: linear-gradient(top,#fece34,#d8a605);
+            }
+            .yellow:hover{
+                background: -webkit-linear-gradient(top,#ffd859,#e3bb38);
+                background: -moz-linear-gradient(top,#ffd859,#e3bb38);
+                background: linear-gradient(top,#ffd859,#e3bb38);
+            }
+            .yellow:active{
+                top:1px;
+                box-shadow: 0 1px 3px #816b1f inset,0 3px 0 #fff;
+                background: -webkit-linear-gradient(top,#d3a203,#dba907);
+                background: -moz-linear-gradient(top,#d3a203,#dba907);
+                background: linear-gradient(top,#d3a203,#dba907);
+            }
+            .yellow.tags:after{
+                background: #d2a000;
+                border:2px solid #fcc100;
+            }
+            .tags:after{
+                font-weight: normal;
+                position: absolute;
+                display: inline-block;
+                content: "FREE";
+                top:-3px;
+                right: -33px;
+                color: #fff;
+                text-shadow:none;
+                width: 85px;
+                height:25px;
+                line-height: 28px;
+                -webkit-transform:rotate(45deg) scale(.7,.7);
+                -moz-transform:rotate(45deg) scale(.7,.7);
+                transform:rotate(45deg) scale(.7,.7);
+            }
+
+
+            .button.green{
+                border:1px solid #64c878;
+                box-shadow: 0 1px 2px #b9ecc4 inset,0 -1px 0 #6c9f76 inset,0 -2px 3px #b9ecc4 inset;
+                background: -webkit-linear-gradient(top,#90dfa2,#84d494);
+                background: -moz-linear-gradient(top,#90dfa2,#84d494);
+                background: linear-gradient(top,#90dfa2,#84d494);
+            }
+            .green.tags:after{
+                background: #64c878;
+                border:2px solid #9bebac;
+            }
+            .green:hover{
+                background: -webkit-linear-gradient(top,#aaebb9,#82d392);
+                background: -moz-linear-gradient(top,#aaebb9,#82d392);
+                background: linear-gradient(top,#aaebb9,#82d392);
+            }
+            .green:active{
+                top:1px;
+                box-shadow: 0 1px 3px #4d7254 inset,0 3px 0 #fff;
+                background: -webkit-linear-gradient(top,#5eac6e,#72b37e);
+                background: -moz-linear-gradient(top,#5eac6e,#72b37e);
+                background: linear-gradient(top,#5eac6e,#72b37e);
+            }
+        </style>
+    </head>
+    <body>
+        <body>
+            <h1 id="Title2" style="color: gray;font: bold 27px arial;position: absolute;visibility: visible;top: -35px;left: 30px;">
+                <p>LUCKY~WANG</p>
+            </h1>
+            <div style="padding-top: 33px;padding-left: 12px;">
+                <p>当前页面ID: <span id="currentPageId"></span></p><br>
+                <p>目前同步来源页面ID: <span id="pageId"></span></p>
+            </div>
+            <div style="padding-top: 33px;padding-left: 12px;">
+                <button id="needUpdate" type="button" class="button yellow tags">需要同步到此页面</button>
+                <button id="update2Other" type="button" class="button green tags">同步到其他页面</button>
+            </div>
+            <script type="text/javascript" src="popUp.js"></script>
+        
+    </body>
+    </body>
+</html>
